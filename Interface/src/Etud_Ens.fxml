@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu1Controle">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="63.0" layoutY="28.0" prefHeight="40.0" prefWidth="232.0" text="Menu de choix :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="143.0" prefHeight="30.0" prefWidth="201.0" text="Consulter catalogue" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="198.0" prefHeight="45.0" prefWidth="191.0" text="Rechercher un livre" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="266.0" prefHeight="40.0" prefWidth="319.0" text="Consulter l'historique des emprunts" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="334.0" prefHeight="17.0" prefWidth="257.0" text="Gestion des emprunts" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="406.0" prefHeight="17.0" prefWidth="239.0" text="Gestion des retours" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="26.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="25.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="25.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="27.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@4.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="26.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@5.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="415.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="88.0" fitWidth="214.0" layoutX="43.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@choix1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="250.0" prefHeight="25.0" prefWidth="211.0" text="&gt;&gt; Entrez votre choix SVP :" textFill="#0598ff">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="choix" layoutX="70.0" layoutY="302.0" promptText="Ici" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button layoutX="91.0" layoutY="373.0" mnemonicParsing="false" onAction="#Entrer" prefHeight="36.0" prefWidth="81.0" style="-fx-background-color: #0598ff;" text="Entrer" textFill="WHITE" />
+            <Label layoutX="28.0" layoutY="14.0" prefHeight="28.0" prefWidth="125.0" textFill="#0598ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0598ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Historique_EmpController">
+   <children>
+      <Label layoutX="66.0" layoutY="14.0" prefHeight="37.0" prefWidth="490.0" text="Consultation de l'historique des emprunts" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="13.0" layoutY="68.0" prefHeight="310.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="titre" prefWidth="171.0" text="Titre" />
+          <TableColumn fx:id="date" prefWidth="248.0" text="Date correspondante" />
+            <TableColumn fx:id="statut" prefWidth="150.0" text="Statut" />
+        </columns>
+      </TableView>
+      <Button layoutY="2.0" mnemonicParsing="false" onAction="#closeFn" prefHeight="15.0" prefWidth="35.0">
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@flch.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

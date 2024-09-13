@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="632.0" style="-fx-background-color: #0598ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Afficher_LivreController">
+   <children>
+      <Label layoutX="127.0" layoutY="14.0" prefHeight="35.0" prefWidth="344.0" text="Afficher les détails d'un Livre" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="10.0" layoutY="58.0" prefHeight="68.0" prefWidth="610.0">
+        <columns>
+          <TableColumn fx:id="idL" prefWidth="70.0" text="Id" />
+          <TableColumn fx:id="titre" prefWidth="161.0" text="Titre" />
+            <TableColumn fx:id="auteur" prefWidth="142.0" text="Auteur" />
+            <TableColumn fx:id="genre" minWidth="0.0" prefWidth="116.0" text="Genre" />
+            <TableColumn fx:id="dispo" minWidth="-Infinity" prefWidth="125.0" text="Disponible" />
+        </columns>
+      </TableView>
+      <Button layoutX="10.0" layoutY="7.0" mnemonicParsing="false" onAction="#closeFn" prefHeight="17.0" prefWidth="30.0">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@flch.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
